@@ -49,7 +49,7 @@ class OptionController extends Controller
         $option = Option::create($request->validated());
         $this->handleFormRequest($option, $request);
 
-        return to_route('options.index')->with('success', "L'option a bien été modifié");
+        return to_route('options.index')->with('success', "L'option a bien été créer");
     }
 
     /**

@@ -71,7 +71,7 @@ export default withAppLayout(Breadcrumbs, ({ collection, q }: Props) => {
                             >
                                 <Link href={property.create()}>
                                     <PlusIcon />
-                                    Ajouter un ingredient
+                                    Ajouter un bien
                                 </Link>
                             </Button>
                         </TableCell>
@@ -140,7 +140,7 @@ export default withAppLayout(Breadcrumbs, ({ collection, q }: Props) => {
                                             })}
                                             onBefore={() =>
                                                 confirm(
-                                                    'Voulez vous vraiment supprimer cet ingredient',
+                                                    'Voulez vous vraiment supprimer ce bien ?',
                                                 )
                                             }
                                         >

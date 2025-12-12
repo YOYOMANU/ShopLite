@@ -65,7 +65,7 @@ class PropertyController extends Controller
             $property->options()->sync([]);
         }
 
-        return to_route('property.index')->with('success', "Le bien a bien été modifié");
+        return to_route('property.index')->with('success', "Le bien a bien été créer");
     }
 
     /**
@@ -130,7 +130,7 @@ class PropertyController extends Controller
     {
         $property->delete();
 
-        return to_route('property.index')->with('success', "Le bien a bien été modifié");
+        return to_route('property.index')->with('success', "Le bien a bien été supprimé");
     }
 
 
