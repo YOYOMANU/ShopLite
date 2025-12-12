@@ -11,9 +11,17 @@ import {
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
 import { dashboard } from '@/routes';
+import options from '@/routes/options';
+import property from '@/routes/property';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import {
+    BookOpen,
+    Folder,
+    GridIcon,
+    LayoutGrid,
+    StoreIcon,
+} from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -21,6 +29,16 @@ const mainNavItems: NavItem[] = [
         title: 'Dashboard',
         href: dashboard(),
         icon: LayoutGrid,
+    },
+    {
+        title: 'Options',
+        href: options.index().url,
+        icon: GridIcon,
+    },
+    {
+        title: 'Bien Immobilier',
+        href: property.index().url,
+        icon: StoreIcon,
     },
 ];
 
